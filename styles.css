@@ -1,0 +1,57 @@
+h1 {
+  color: rgb(80, 80, 80);
+  font-weight: 100;
+  font-size: 3em;
+}
+
+p {
+  font-size: 1em;
+}
+
+.spaced {
+  margin-top: 2%;
+}
+
+.button-left, .button-right {
+  display: ;
+}
+
+.thumbnail {
+  -webkit-filter: grayscale(100%);
+}
+
+.hint {
+  color: #7A7A7A;
+}
+
+#build {
+  display: ;
+}
+
+#go-back-button {
+  visibility: hidden;
+}
+
+#gallery {
+  visibility: hidden;
+}
+
+#display-img {
+  visibility: hidden;
+}
+
+#submit-button {
+  background-color: #3FBF3F;
+  border-color: #3FBF3F;
+  margin-top: 1%;
+}
+
+#submit-button:hover {
+  background-color: #348D34;
+  border-color: #348D34;
+}
+
+#footnote {
+  font-size: 0.5em;
+  color: #7A7A7A;
+}
