@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Title of the website -->
+    <title id="tab-title">Build Your Own Gallery!</title>
+    <!-- Importing bootstrap, styles.css and JQuery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Responsive container -->
+    <div class="container-fluid">
+      <!-- Heading -->
+      <h1 id="web-title" class="text-center heading">Build Your Own Gallery</h1>
+      <h3>About me</h3>
+      <p>For this final project, we are to make a website about ourselves - something that interests us.
+         What interests me is coding, and computer science. So, I have decided to make a website that allows
+         you to make your <em>own</em> interactive gallery, with the photos that <em>you</em> choose.
+       </p>
+       <!-- Contents implemented using JavaScript -->
+       <p id="interaction" class="hint">
+        </p>
+        <p class="hint"><em><strong>Note:</strong> with some images, when you click on them in the thumbnail or go
+          to them using the buttons, the image takes time to load. The slideshow might also not be smooth.
+           This is because the server where the image is
+          hosted is not allowing for the image to be cached in the browser, and is downloading it every time you
+          click on it. If this happens, please try with other images.</em>
+        </p>
+       <div id="build" class="container">
+       <p>Please enter four URLs to images <strong>below</strong>:</p>
+       <p class="hint"><em><strong>Hint</strong>: to get an image's URL, right click on it and select "Copy Image Address"
+          (or something similar).</em></p>
+
+        <label for="url-1">Enter URLs:</label>
+        <input type="text" id="url-1" class="form-control" placeholder="Enter first URL"/>
+        <input type="text" id="url-2" class="form-control" placeholder="Enter second URL"/>
+        <input type="text" id="url-3" class="form-control" placeholder="Enter third URL"/>
+        <input type="text" id="url-4" class="form-control" placeholder="Enter last URL"/>
+
+        &nbsp;
+        <p>Please enter the title of your gallery:</p>
+
+        <label for="title-of-gallery">Enter title:</label>
+        <input type="text" id="title-of-gallery" class="form-control" placeholder="Enter title"/>
+
+        <button id="submit-button" class="btn btn-primary">Submit <i class="fa fa-check-square"></i></button>
+
+      </div>
+      <div id="go-back-button" class="container">
+        <button id="go-back" class="btn btn-primary"><i class="fa fa-arrow-left"></i> Go back</button>
+      </div>
+      <div id="gallery" class="row spaced">
+        <div class="col-md-3 thumbnail_div">
+          <!-- dead links by giving href="#" so that little hand icon appears -->
+          <a href="#">
+            <img id="1" class="img-responsive thumbnail"/>
+          </a>
+        </div>
+        <div class="col-md-3 thumbnail_div">
+          <a href="#">
+            <img id="2" class="img-responsive thumbnail"/>
+          </a>
+        </div>
+        <div class="col-md-3 thumbnail_div">
+          <a href="#">
+            <img id="3" class="img-responsive thumbnail"/>
+          </a>
+        </div>
+        <div class="col-md-3 thumbnail_div">
+          <a href="#">
+            <img id="4" class="img-responsive thumbnail"/>
+          </a>
+        </div>
+      </div>
+      <div id="display-img" class="row spaced">
+        <div class="col-md-2">
+          <!-- Buttons to go left or right -->
+          <button class="btn btn-block btn-primary button-left btn-lg">&lt;</button>
+        </div>
+        <div class="col-md-8 big-img">
+          <!-- Big image -->
+          <a href="#">
+            <img id="big" class="img-responsive center-block"/>
+          </a>
+        </div>
+        <div class="col-md-2">
+          <button class="btn btn-block btn-primary button-right btn-lg">&gt;</button>
+      </div>
+    </div>
+    <p id="footnote">By Daniel Hernandez, 2015</p>
+  </div>
+  </body>
+</html>
