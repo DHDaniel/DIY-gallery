@@ -59,20 +59,12 @@ $(window).resize(function () {
   // Sets page to small version, without buttons
   if ($(window).width() < 1024) {
 
-    $("div.thumbnail_div").addClass("col-xs-3").removeClass("col-md-3");
-
-    $("div.big-img").addClass("col-xs-12").removeClass("col-md-8");
-
     $(".button-left").parent().css("display", "none");
     $(".button-right").parent().css("display", "none");
 
   }
 // Sets page to big version, with buttons
   else {
-    $("div.thumbnail_div").addClass("col-md-3").removeClass("col-xs-3");
-
-    $("div.big-img").addClass("col-md-8").removeClass("col-xs-12");
-
     $(".button-left").parent().css("display", "");
     $(".button-right").parent().css("display", "");
   };
