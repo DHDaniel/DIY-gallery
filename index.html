@@ -3,6 +3,8 @@
   <head>
     <!-- Title of the website -->
     <title id="tab-title">Build Your Own Gallery!</title>
+    <!-- Ensuring smartphone functionality -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Importing bootstrap, styles.css and JQuery -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -53,23 +55,23 @@
         <button id="go-back" class="btn btn-primary"><i class="fa fa-arrow-left"></i> Go back</button>
       </div>
       <div id="gallery" class="row spaced">
-        <div class="col-md-3 thumbnail_div">
+        <div class="col-xs-3 col-md-3 thumbnail_div">
           <!-- dead links by giving href="#" so that little hand icon appears -->
           <a href="#">
             <img id="1" class="img-responsive thumbnail"/>
           </a>
         </div>
-        <div class="col-md-3 thumbnail_div">
+        <div class="col-xs-3 col-md-3 thumbnail_div">
           <a href="#">
             <img id="2" class="img-responsive thumbnail"/>
           </a>
         </div>
-        <div class="col-md-3 thumbnail_div">
+        <div class="col-xs-3 col-md-3 thumbnail_div">
           <a href="#">
             <img id="3" class="img-responsive thumbnail"/>
           </a>
         </div>
-        <div class="col-md-3 thumbnail_div">
+        <div class="col-xs-3 col-md-3 thumbnail_div">
           <a href="#">
             <img id="4" class="img-responsive thumbnail"/>
           </a>
@@ -80,7 +82,7 @@
           <!-- Buttons to go left or right -->
           <button class="btn btn-block btn-primary button-left btn-lg">&lt;</button>
         </div>
-        <div class="col-md-8 big-img">
+        <div class="col-xs-12 col-md-8 big-img">
           <!-- Big image -->
           <a href="#">
             <img id="big" class="img-responsive center-block"/>
